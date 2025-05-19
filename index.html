@@ -146,10 +146,14 @@
                 audio.play();
             });
         })
+
+        function autoZoom() {
+            document.body.style.zoom = "175%";
+        }
     </script>
 </head>
 
-<body>
+<body onload="autoZoom()">
     <audio controls id="audio" autoplay loop style="display: none;">
         <source  src="sound.mp3" type="audio/mpeg" >
         <source src="sound.ogg" type="audio/ogg">
