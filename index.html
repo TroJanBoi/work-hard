@@ -131,6 +131,10 @@
                 font-size: 1.4em;
             }
         }
+
+        @media screen {
+            
+        }
     </style>
     <title>Happy Birthday</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
@@ -148,7 +152,11 @@
         })
 
         function autoZoom() {
-            document.body.style.zoom = "175%";
+            if (window.innerWidth > 800) {
+                document.body.style.zoom = "175%";
+            }
+            else
+                document.body.style.zoom = "130%";
         }
     </script>
 </head>
